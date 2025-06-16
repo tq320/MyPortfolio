@@ -5,21 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thuan Quach | Portfolio</title>
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="style.css">
 	<!-- Boxicons CSS -->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-	<nav class="navbar">
+
+	<!-- header -->
+	<header>
 		<a href="#" class="logo">Thuan.</a>
-		<ul>
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
+
+		<i class="bx bx-menu" id="menu-icon"></i>
+		<nav class="navbar">
+			<a href="#" class="active">Home</a>
+			<a href="#">Resume</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Contact</a>
+		<nav class="navbar">
 	</nav>
+	</header>
 
 	<div class="bars-animation">
 		<div class="bar" style="--i:6;"></div>
@@ -30,14 +35,15 @@
 		<div class="bar" style="--i:1;"></div>
 	</div>
 
+	<!-- home section -->
 	<section class="home">
-		<div class="home-info">
+		<div class="home-detail">
 			<h1>Thuan Quach</h1>
-			<h2>I'm an 
+			<h2>I'm a
 				<span style="--i:4;" data-text="Aspiring Software Engineer">Aspiring Software Engineer</span>
 				<span style="--i:3;" data-text="Computer Science Student">Computer Science Student</span>
-				<span style="--i:2;" data-text=""></span>
-				<span style="--i:1;" data-text=""></span>
+				<span style="--i:2;" data-text="Ex-Cybersecurity Intern">Ex-Cybersecurity Intern</span>
+				<span style="--i:1;" data-text="Ex-Undergraduate Student Researcher">Ex-Undergraduate Student Researcher</span>
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -46,10 +52,10 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<div class="btn-sci">
-				<a href="#" class="btn">Download CV</a>
+				<a href="resume.pdf" target="_blank" class="btn">Download CV</a>
 				<div class="sci">
-					<a href="#"><i class='bx bxl-linkedin'></i></a>
-					<a href="#"><i class='bx bxl-github'></i></a>
+					<a href="https://www.linkedin.com/in/thuanquach03/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+					<a href="https://github.com/tq320" target="_blank"><i class='bx bxl-github'></i></a>
 				</div>
 			</div>
 		</div>
@@ -62,5 +68,112 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- resume section -->
+	<section class="resume active">
+		<div class="resume-container">
+			<div class="resume-box">
+				<h2>Why Hire Me?</h2>
+				<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button class="resume-btn active">Experience</button>
+				<button class="resume-btn">Education</button>
+				<button class="resume-btn">Skills</button>
+				<button class="resume-btn">About Me</button>
+			</div>
+
+			<div class="resume-box">
+				<div class="resume-detail experience active">
+					<h2 class="heading">My <span>Experience</span></h2>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="resume-list">
+						<div class="resume-item">
+							<p class="year">Feb 2025 - Apr 2025</p>
+							<h3> Cloud and Cybersecurity Intern</h3>
+							<p class="company">Fresno State Technology Services</p>
+							<p>Python, AWS-based SIEM, Amazon S3, AWS Lambda, EC2 with Fluent-bit, OpenSearch Pipelines, OpenSearch Dashboards.</p>
+						</div>
+						<div class="resume-item">
+							<p class="year">Jun 2024 - Dec 2024</p>
+							<h3> Undergraduate Research Assistant</h3>
+							<p class="company">California State University, Fresno</p>
+							<p>C#, Unity, Simulation, Blender, GIMP, Agriculture, Data Generation</p>
+						</div>
+					</div>
+				</div>
+				<div class="resume-detail education">
+					<h2 class="heading">My <span>Education</span></h2>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="resume-list">
+						<div class="resume-item">
+							<p class="year">Aug 2025 - May 2027</p>
+							<h3> Master in Computer Science</h3>
+							<p class="company">Georgia Institute of Technology</p>
+							<p>Specialization in Computing Systems</p>
+						</div>
+						<div class="resume-item">
+							<p class="year">Aug 2021 - May 2025</p>
+							<h3>Bachelor in Computer Science</h3>
+							<p class="company">California State University, Fresno</p>
+							<p>Summa Cum Laude (GPA: 3.97/4.00), Google Student Developer Club, Computer Science Club, Club Sport Kendo</p>
+						</div>
+					</div>
+				</div>
+				<div class="resume-detail skills">
+					<h2 class="heading">My <span>Skills</span></h2>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="resume-list">
+						<div class="resume-item">
+							<i class='bx bxl-html5'></i>
+							<span>HTML5</span>
+						</div>
+						<div class="resume-item">
+							<i class='bx bxl-css3'></i>
+							<span>CSS3</span>
+						</div>
+					</div>
+				</div>
+				<div class="resume-detail about">
+					<h2 class="heading">About <span>Me</span></h2>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="resume-list">
+						<div class="resume-item">
+							<p>Name <span>Thuan Quach</span></p>
+						</div>
+						<div class="resume-item">
+							<p>Email <span>thuanquach577@gmail.com</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- custom javascript -->
+	<script src="script.js"></script>
 </body>
 </html>
